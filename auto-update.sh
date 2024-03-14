@@ -69,7 +69,7 @@ for app in "${additionalApplications[@]}"; do
 
     if [ -e "$checkPath" ]; then
 
-		applicationsUpdate=$(printf "%s\n" "$applicationsUpdate" "$label")
+	applicationsUpdate=$(printf "%s\n" "$applicationsUpdate" "$label")
         echo "${log} $checkPath is installed. Adding to update list." 2>&1 | tee -a /var/tmp/APPUPDATE.log
 
     else
